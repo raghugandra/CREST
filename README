@@ -1,0 +1,95 @@
+--Introduction--
+
+The CREST QA Engineer Project 1 Test is designed to assess an engineer's
+ability to write Selenium Scripts that test web application functionality.
+
+Your goal is to complete the four test skeletons according to the directions
+in the source code. You may use any Java-based IDE you wish to write your
+tests. These tests focus on exercising some basic functionality of the GitHub
+website (https://github.com).
+
+Before writing your tests you will need to create an account on GitHub if you
+do not already have one. Whether you create a new GitHub account for simply
+running the tests or whether you use your own existing GitHub account, please
+do not hard code your username or password into your source file when you are
+ready to submit your project. Once you have finished your tests we will clone
+your repository (so make sure its public) and examine your code. We don't
+want to see your username and password in your source file :-). Once we have
+looked at your solution we will then schedule a followup interview to go over
+your code.
+
+The tests that you will write are as follows.
+
+1. You will write a test to see if a registered user can successfully log into
+GitHub. Before trying this make sure you have a valid GitHub account to test
+with (see above).
+
+2. You will write a test to verify that an unregistered user cannot log into
+GitHub. In your test look for a login failure message or some other suitable
+indicator to verify that the unregistered user wasn't able to login.
+
+3. You will write a test to verify that a registered user can successfully
+create a new repository when that repository doesn't already exist on that
+user's account. The new repository can be called whatever you wish.
+
+4. You will write a test to verify that a registered user cannot create a new
+repository when it has a name that is the same as an existing repository
+already associated with the user's account.
+
+Please do not use the Selenium IDE to help generate your tests.
+
+--Setup--
+
+To gain access to the project you must first have Git installed on your local
+machine. If you do not yet have Git installed then you can git it (ha, ha)
+here:
+
+https://git-scm.com/
+
+Once it has been downloaded and installed on your machine then you will want
+to clone the crest-qa-engineer-project-1-test.git repository. One way to do
+this from the command line is to use the following command:
+
+git clone https://github.com/jeffmitchell/crest-qa-engineer-project-1-test.git
+ crest-qa-engineer-project-1-test
+
+This will copy the project to your local machine where you can then work on
+your solution to the four tests.
+
+The code is a Java project built using Maven. To get it running you must
+first have Java installed on your machine. You can download the appropriate
+version of Java from the following URL:
+
+http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+Once Java is installed you will need to install Maven. You can find directions
+for installing Maven by going to http://maven.apache.org/. Once you have Maven
+installed go to the root of the project and on the command line type:
+
+mvn clean install
+
+If all is setup correctly then Maven will automatically download and install
+Selenium and its dependencies as well as the JUnit test framework. If you are
+interested, you can see references to these libraries in the pom.xml included
+at the root of the project.
+
+This test also uses ChromeDriver to power a Chrome browser. You will therefore
+need to download and install it on your system. You can download the
+ChromeDriver from the following location:
+
+https://sites.google.com/a/chromium.org/chromedriver/
+
+Note that the easiest way to enable Selenium to find ChromeDriver is to place
+ChromeDriver somewhere on your system's PATH.
+
+As you work on your tests be sure to periodically push them to your GitHub
+account (remember not to include your username and password). Once you are
+satisfied with your solution then send us the URL to your repository and we
+will clone and examine your code. We will then contact you to setup an
+interview to go over your solution.
+
+If you have any questions related to this project then please contact
+Jeff Mitchell (jmitch@vt.edu).
+
+
+
